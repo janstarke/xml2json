@@ -1,0 +1,20 @@
+[package]
+name = "xml2json"
+version = "0.1.0"
+edition = "2018"
+description = "CLI tool to convert XML into JSON"
+homepage = "https://www.github.com/janstarke/xml2json"
+repository = "https://www.github.com/janstarke/xml2json"
+license = "GPL-3.0"
+authors = ["Jan Starke <Jan.Starke@t-systems.com>"]
+categories = ["command-line-utilities", "encoding"]
+keywords = ["cli", "xml", "json"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0"
+clap = {version="3", features=["derive"]}
+clap-verbosity-flag = {version="1.0.0"}
+simplelog = "0.12"
+log = "0.4"
