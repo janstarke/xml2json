@@ -1,6 +1,6 @@
 [package]
 name = "xml2json"
-version = "0.1.2"
+version = "0.1.3"
 edition = "2021"
 description = "CLI tool to convert XML into JSON"
 homepage = "https://www.github.com/janstarke/xml2json"

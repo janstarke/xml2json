@@ -14,7 +14,7 @@ impl FileType {
                 Ok(w) => Ok(Box::new(w) as Box<dyn Write>),
                 Err(why) => Err(why)
             }
-            Self::Stream => Ok(Box::new(std::io::stdout().lock()) as Box<dyn Write>)
+            Self::Stream => Ok(Box::new(std::io::stdout()) as Box<dyn Write>)
         }
     }
 
